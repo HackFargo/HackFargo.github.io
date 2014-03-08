@@ -1,0 +1,14 @@
+{
+  "name": "HackFargo.github.io",
+  "version": "0.0.1",
+  "homepage": "http://hackfargo.github.io",
+  "license": "No",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
