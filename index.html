@@ -1,40 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+---
+layout: default
+title: Your New Jekyll Site
+---
 
-    <title>Title</title>
-    <meta name="description" content="Hack Fargo!">
-    <meta name="author" content="Hack Fargo!">
-
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" href="bower_components/pure/base-min.css">
-    <link rel="stylesheet" href="bower_components/pure/pure-min.css">
-
-    <link rel="stylesheet/less" type="text/css" href="assets/styles/stylesheet.less" />
-    <script src="bower_components/less.js/dist/less-1.7.0.js" type="text/javascript"></script>
-
-</head>
-<body>
-
-<div id="container">
-
-  <div id="billboard">
-    <h1>Hack Fargo</h1>
-    <h2 class="subheader">This is a tag line of sorts!</h2>
-  </div><!-- /container -->
-
-  <div id="auxillary">
-    <p>More Information goes here!</p>
-  </div>
-
-
-
-</div><!-- /container -->
-</body>
-</html>
-
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
