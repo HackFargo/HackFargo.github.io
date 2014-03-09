@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Hack Fargo!</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <!-- <link rel="stylesheet" href="/assets/css/syntax.css"> -->
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="/assets/fonts/bariol-family-stylesheet.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/stylesheet.css">
+        <!-- <link rel="stylesheet/less" type="text/css" href="/assets/css/stylesheet.less"> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script> -->
+    </head>
+<body>
+<div id="container">
+
+    <div id="neon-splash">
+  <div id="mainlogo">
+    <h1>
+      <span id="logo-hack">hack</span>
+      <span id="logo-fargo">Fargo </span>
+    </h1>
+    <h2>Tagline goes here!</h2>
+  </div><!-- /logo -->
+</div><!-- /splash -->
+
+  <div id="menubar">
+  <ul>
+    <li><a href="https://twitter.com/hackfargo">@HackFargo</a></li>
+    <li><a href="/docs">Documents</a></li>
+    <li><a href="/examples">Examples</a></li>
+  </ul>
+</div>
+
+
+
+<div id="content">
+  <h1>Documentation</h1>
+
+  <h2>Sample API Usage</h2>
+  <p>Get calls from the last 15 days - <pre>http://api.hackfargo.co/calls</pre></p>
+  <p>Get the calls from the from a date range: <pre>http://api.hackfargo.co/calls?start=6-20-2013&end=6-21-2013</pre></p>
+  <p>Get the calls related to specific incident type: <pre>http://api.hackfargo.co/calls/type/Party</pre></p>
+  <p>Get the calls related to specific incident type with a date range: <pre>http://api.hackfargo.co/calls/type/Party?start=3-3-2014&end=3-4-2014</pre></p>
+
+
+  <h2>Sample Data from API</h2>
+  <pre>
+  <code>
+[
+  {
+    "DataSetID": "DispatchLogs",
+    "Lat": 46.81618741541262,
+    "Long": -96.88359341719978,
+    "Date": 1394258006,
+    "Description": "LOUD PEOPLE/MARIJUANA ODOR",
+    "Meta": {
+      "id": 215986,
+      "DateString": "3/7/2014 11:53:26 PM",
+      "DateVal": 1394258006,
+      "Address": "900 BLK 44 ST S",
+      "NatureOfCall": "LOUD PEOPLE/MARIJUANA ODOR",
+      "CallType": "Loud Party/People",
+      "IncidentNumber": "",
+      "Duration": "",
+      "AdditionalInfo": "",
+      "CFSID": -5202747,
+      "VenueName": "FGO",
+      "VenueDescription": "Fargo",
+      "Block": "900",
+      "StreetPrefix": "",
+      "StreetPretype": "",
+      "StreetName": "44",
+      "StreetType": "ST",
+      "StreetSuffix": "S",
+      "Lat": 0,
+      "Long": 0
+    }
+  },
+  {
+    "DataSetID": "DispatchLogs",
+    "Lat": 46.830937295065304,
+    "Long": -96.79115266298359,
+    "Date": 1394164277,
+    "Description": "LOUD TV",
+    "Meta": {
+      "id": 215829,
+      "DateString": "3/6/2014 9:51:17 PM",
+      "DateVal": 1394164277,
+      "Address": "4200 BLK 9 AVENUE CIR S",
+      "NatureOfCall": "LOUD TV",
+      "CallType": "Loud Noise",
+      "IncidentNumber": "2014-00013015",
+      "Duration": "2326",
+      "AdditionalInfo": "",
+      "CFSID": -5202112,
+      "VenueName": "FGO",
+      "VenueDescription": "Fargo",
+      "Block": "4200",
+      "StreetPrefix": "",
+      "StreetPretype": "",
+      "StreetName": "9 AVENUE",
+      "StreetType": "CIR",
+      "StreetSuffix": "S",
+      "Lat": 0,
+      "Long": 0
+    }
+  }
+]
+  </code>
+  </pre>
+</div>
+
+  <div class="description-box" id="credits">
+  <p>Credits and other stuff <br />
+  Follow us on twitter on <a href="https://twitter.com/hackfargo">@HackFargo</a></p>
+</div>
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47216097-3', 'hackfargo.co');
+  ga('send', 'pageview');
+
+</script>
+
+</div><!-- /container -->
+</body>
+</html>
