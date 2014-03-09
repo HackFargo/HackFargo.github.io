@@ -1,0 +1,208 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 9, ../sass/screen.scss */
+body {
+  background-color: black;
+  color: white; }
+
+/* line 14, ../sass/screen.scss */
+.heading {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 50px;
+  font-size: 40px;
+  font-weight: bold; }
+
+/* line 22, ../sass/screen.scss */
+.face {
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #BBB;
+  text-align: center;
+  vertical-align: middle;
+  /*@include opacity(.5);*/ }
+
+.face .partyType{
+  margin: 40px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* line 40, ../sass/screen.scss */
+.scene {
+  position: relative;
+  -webkit-perspective: 1200;
+  -moz-perspective: 1200;
+  -ms-perspective: 1200;
+  -o-perspective: 1200;
+  perspective: 1200;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  width: 100%;
+  height: 600px;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, color-stop(0%, #808080), color-stop(100%, rgba(128, 128, 128, 0)));
+  background-image: -webkit-radial-gradient(50% 50%, circle, #808080 0px, rgba(128, 128, 128, 0) 300px);
+  background-image: -moz-radial-gradient(50% 50%, circle, #808080 0px, rgba(128, 128, 128, 0) 300px);
+  background-image: -o-radial-gradient(50% 50%, circle, #808080 0px, rgba(128, 128, 128, 0) 300px);
+  background-image: radial-gradient(50% 50%, circle, #808080 0px, rgba(128, 128, 128, 0) 300px); }
+
+/* line 49, ../sass/screen.scss */
+.cube {
+  /*-webkit-animation: spin 2s infinite linear;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: -webkit-transform 4s ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: -moz-transform 4s ease-out 0;
+  -o-transition: -o-transform 4s ease-out 0;
+  transition: transform 4s ease-out 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+  /* line 61, ../sass/screen.scss */
+  .cube .face1 {
+    -webkit-transform: translateZ(100px);
+    -moz-transform: translateZ(100px);
+    -ms-transform: translateZ(100px);
+    -o-transform: translateZ(100px);
+    transform: translateZ(100px); }
+  /* line 65, ../sass/screen.scss */
+  .cube .face2 {
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+    -moz-transform: rotateY(180deg) translateZ(100px);
+    -ms-transform: rotateY(180deg) translateZ(100px);
+    -o-transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(100px); }
+  /* line 69, ../sass/screen.scss */
+  .cube .face3 {
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    -moz-transform: rotateY(90deg) translateZ(100px);
+    -ms-transform: rotateY(90deg) translateZ(100px);
+    -o-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px); }
+  /* line 73, ../sass/screen.scss */
+  .cube .face4 {
+    -webkit-transform: rotateY(270deg) translateZ(100px);
+    -moz-transform: rotateY(270deg) translateZ(100px);
+    -ms-transform: rotateY(270deg) translateZ(100px);
+    -o-transform: rotateY(270deg) translateZ(100px);
+    transform: rotateY(270deg) translateZ(100px); }
+  /* line 77, ../sass/screen.scss */
+  .cube .face5 {
+    -webkit-transform: rotatex(90deg) translateZ(100px);
+    -moz-transform: rotatex(90deg) translateZ(100px);
+    -ms-transform: rotatex(90deg) translateZ(100px);
+    -o-transform: rotatex(90deg) translateZ(100px);
+    transform: rotatex(90deg) translateZ(100px); }
+  /* line 81, ../sass/screen.scss */
+  .cube .face6 {
+    -webkit-transform: rotatex(270deg) translateZ(100px);
+    -moz-transform: rotatex(270deg) translateZ(100px);
+    -ms-transform: rotatex(270deg) translateZ(100px);
+    -o-transform: rotatex(270deg) translateZ(100px);
+    transform: rotatex(270deg) translateZ(100px); }
+
+/* line 86, ../sass/screen.scss */
+.spinIt {
+  display: block;
+  border: 4px solid white;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: bold; }
+
+@-webkit-keyframes spin {
+  /* line 104, ../sass/screen.scss */
+  from {
+    -webkit-transform: translateZ(-100px) rotateY(0) rotateX(0); }
+
+  /* line 105, ../sass/screen.scss */
+  to {
+    -webkit-transform: translateZ(-100px) rotateY(-360deg) rotateX(360deg); } }
