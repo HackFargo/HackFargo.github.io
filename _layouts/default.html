@@ -11,21 +11,15 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/assets/css/stylesheet.css">
-
+        <!-- <link rel="stylesheet/less" type="text/css" href="/assets/css/stylesheet.less"> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script> -->
     </head>
 <body>
 <div id="container">
 
-
-  {% include splash.html %}
-  {% include menubar.html %}
-  {% include why.html %}
-  {% include notforprofit.html %}
+  {{ content }}
 
   {% include footer.html %}
-
 </div><!-- /container -->
-
-
 </body>
 </html>

@@ -1,5 +1,6 @@
 name: Hack Fargo
 description: The blog of MSUM's ACM chapter
+markdown: redcarpet
 url: hackfargo.co
 permalink: /:month-:day-:year/:title
 markdown: rdiscount
