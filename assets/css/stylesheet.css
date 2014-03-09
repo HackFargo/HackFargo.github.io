@@ -155,15 +155,20 @@ ul li a:active {
   margin: 30px auto;
   width: 375px;
 }
-.mailinglist input {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+.mailinglist input[type=email] {
+  text-align: center;
   padding-left: 1em;
   width: 375px;
   display: block;
   border: 1px solid #999;
   height: 35px;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-color: none;
+}
+.mailinglist input[type=submit] {
+  border: 2px solid yellow;
+  padding: 1em;
 }
 #credits {
   font-size: 1em;
@@ -175,4 +180,39 @@ ul li a:active {
   border-top: 1px solid #c7c7c7;
   padding-top: 1em;
   text-align: center;
+}
+#neon-splash {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+#neon-splash #mainlogo {
+  height: 200px;
+  padding-top: 10em;
+  font-family: "Bariol", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-image: url("/assets/img/SmallHackFargoNeon.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+#neon-splash #mainlogo h1 {
+  display: none;
+  padding-top: 1.6em;
+  text-transform: uppercase;
+}
+#neon-splash #mainlogo h1 span {
+  display: block;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+#neon-splash #mainlogo h1 #logo-hack {
+  font-weight: 900;
+  font-size: 3em;
+}
+#neon-splash #mainlogo h1 #logo-fargo {
+  font-weight: 300;
+  font-size: 2.4em;
+}
+#neon-splash #mainlogo h2 {
+  display: none;
 }

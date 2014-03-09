@@ -182,14 +182,28 @@ ul {
   width: 375px;
 
 
-  input {
-    .rounded(4px);
+  input[type=email] {
+    text-align:center;
+    // .border-radius(4px, 0, 0, 4px);
     padding-left: 1em;
     width:375px;
     display:block;
     border: 1px solid #999;
     height: 35px;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    background-color: none;
+    // border-bottom: 1px dashed yellow;
   }
+
+  input[type=submit] {
+    // display: none;
+    border: 2px solid yellow;
+    padding: 1em;
+    // position: absolute; left: -9999px; width: 1px; height: 1px;
+    // .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+    // .border-radius(0, 4px, 4px, 0);
+    }
 }
 
 #credits {
@@ -209,4 +223,45 @@ ul {
 
 // Regular Styles
 
+
+// Neon Splash
+#neon-splash {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2em;
+
+  #mainlogo {
+    height: 200px;
+    padding-top: 10em;
+    font-family: @bariol-family;
+
+    background-image: url("/assets/img/SmallHackFargoNeon.png"); 
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    h1 {
+      display: none;
+      padding-top: 1.6em;
+      text-transform: uppercase;
+    span {
+      display: block;
+      clear: both;
+        padding: 0;
+        margin: 0;
+    }
+      #logo-hack {
+        font-weight: 900;
+        font-size: 3em;
+        }
+      #logo-fargo {
+        font-weight: 300;
+        font-size: 2.4em;
+        }
+    }
+    h2 {
+      display: none;
+      
+    }
+  }
+}
 
