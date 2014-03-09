@@ -11,7 +11,7 @@ body {
 
 
 #container {
-  padding-top: 1em;
+  padding: 1em;
   margin: 0 auto;
 
   width: 768px;
@@ -70,7 +70,7 @@ ul {
     text-align: center;
     width: 120px;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
 
     font-family: @bariol-family;
     font-size: 0.8em;
@@ -83,13 +83,7 @@ ul {
 
     color: @text-primary-color;
 
-    &:hover {
-      .rounded(5px);
-      background-color: @text-primary-color;
-    }
-
     a {
-
     padding: 5px;
     padding-top: 8px;
 
@@ -99,6 +93,8 @@ ul {
       display: inline-block;
 
       &:hover {
+      .rounded(5px);
+      background-color: @text-primary-color;
       color: @body-background-color;
       }
       &:active {
@@ -110,7 +106,107 @@ ul {
 
 
 #container {
+  font-family: @bariol-family;
+  p {
+    font-size: 1em;
+  }
   h2,h3 {
     text-align: center;
   }
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.8em;
+    font-weight: 400;;
+  }
 }
+
+.description-box {
+  padding-top: 3em;
+  text-align: center;
+
+  h2 {
+    text-align: center;
+    text-transform:uppercase;
+  }
+  p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    font-weight: 400;
+    text-align: left;
+    width: 80%;
+    padding-bottom: 2em;
+    // border-bottom: 1px dotted darken(@body-background-color, 50%);
+
+  }
+
+}
+#what-is-hack-fargo {
+  padding-top: 2em;
+  text-align: center;
+  p {
+    margin: 0 auto;
+    width: 90%;
+    font-weight: 200;
+    // font-style: italic;
+    font-size: 2em;
+  }
+}
+
+#why-hack-fargo {
+  text-align: center;
+  p {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+}
+
+
+#who-are-we {
+  text-align: center;
+  p {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+}
+
+
+// Mailing List
+.mailinglist {
+  margin-top: 30px;
+  margin: 30px auto;
+  width: 375px;
+
+
+  input {
+    .rounded(4px);
+    padding-left: 1em;
+    width:375px;
+    display:block;
+    border: 1px solid #999;
+    height: 35px;
+  }
+}
+
+#credits {
+  font-size: 1em;
+
+  p {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 1em;
+  border-top: 1px solid darken(@body-background-color, 5%);
+  padding-top: 1em;
+    text-align: center;
+  }
+
+}
+
+
+// Regular Styles
+
+
