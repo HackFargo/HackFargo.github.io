@@ -167,8 +167,10 @@ ul li a:active {
   background-color: none;
 }
 .mailinglist input[type=submit] {
-  border: 2px solid yellow;
+  width: 375px;
+  display: block;
   padding: 1em;
+  padding-top: 0;
 }
 #credits {
   font-size: 1em;
