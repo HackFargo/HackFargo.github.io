@@ -10,26 +10,28 @@ body {
   padding: 0;
 }
 body {
-  background-color: #d4d4d4;
+  background-color: #eeeeee;
   font-size: 16px;
 }
 #container {
-  background-color: #eeeeee;
+  padding-top: 1em;
   margin: 0 auto;
   width: 768px;
 }
 #splash {
   text-align: center;
   margin: 0 auto;
+  padding-top: 2em;
 }
 #splash #mainlogo {
   padding-top: 10em;
   font-family: "Bariol", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image: url("/assets/img/HandIcon.svg");
+  background-image: url("/assets/img/LargeHandIcon.svg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 #splash #mainlogo h1 {
+  padding-top: 1.6em;
   text-transform: uppercase;
 }
 #splash #mainlogo h1 span {
@@ -45,4 +47,48 @@ body {
 #splash #mainlogo h1 #logo-fargo {
   font-weight: 300;
   font-size: 2.4em;
+}
+#splash #mainlogo h2 {
+  display: none;
+}
+ul {
+  margin: 4em auto 0 auto;
+  text-align: center;
+  padding: 0;
+}
+ul li {
+  text-align: center;
+  width: 120px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Bariol", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: #ff0000;
+}
+ul li:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ff0000;
+}
+ul li a {
+  padding: 5px;
+  padding-top: 8px;
+  color: #ff0000;
+  background-color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+ul li a:hover {
+  color: #d4d4d4;
+}
+ul li a:active {
+  color: #eeeeee;
+}
+#container h2,
+#container h3 {
+  text-align: center;
 }
