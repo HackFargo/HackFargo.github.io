@@ -1,0 +1,7 @@
+name: Hack Fargo
+description: The blog of MSUM's ACM chapter
+url: hackfargo.co
+permalink: /:month-:day-:year/:title
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]

@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d4d4d4;
+  font-size: 16px;
+}
+#container {
+  background-color: #eeeeee;
+  margin: 0 auto;
+  width: 768px;
+}
+#splash {
+  text-align: center;
+  margin: 0 auto;
+}
+#splash #mainlogo {
+  padding-top: 10em;
+  font-family: "Bariol", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-image: url("/assets/img/HandIcon.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+#splash #mainlogo h1 {
+  text-transform: uppercase;
+}
+#splash #mainlogo h1 span {
+  display: block;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+#splash #mainlogo h1 #logo-hack {
+  font-weight: 900;
+  font-size: 3em;
+}
+#splash #mainlogo h1 #logo-fargo {
+  font-weight: 300;
+  font-size: 2.4em;
+}

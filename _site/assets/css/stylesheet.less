@@ -1,0 +1,54 @@
+@import "basics.less";
+@import "bariol.less";
+@import "colors.less";
+
+
+body {
+  background-color: @body-background-color;
+  font-size: 16px;
+}
+
+
+#container {
+  background-color: @content-background-color;
+  margin: 0 auto;
+
+  width: 768px;
+}
+
+
+
+#splash {
+  text-align: center;
+  margin: 0 auto;
+
+  #mainlogo {
+    padding-top: 10em;
+    font-family: @bariol-family;
+
+    background-image: url("/assets/img/HandIcon.svg"); 
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    h1 {
+      text-transform: uppercase;
+    span {
+      display: block;
+      clear: both;
+        padding: 0;
+        margin: 0;
+    }
+      #logo-hack {
+        font-weight: 900;
+        font-size: 3em;
+        }
+      #logo-fargo {
+        font-weight: 300;
+        font-size: 2.4em;
+        }
+    }
+    h2 {
+      
+    }
+  }
+}
