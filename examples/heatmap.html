@@ -73,7 +73,7 @@ function initialize() {
   {
     var m = new google.maps.Marker({
         map:       map,
-        title:     points[i].Meta.Address + ": " + points[i].Description,
+        title:     points[i].Meta.Address + ": " + points[i].Description + " | " + points[i].GeoLookupType,
         position:  new google.maps.LatLng(points[i].Lat,points[i].Long),
     });
     markers.push(m);
