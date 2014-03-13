@@ -27,6 +27,8 @@
 // Adding 500 Data Points
 var map, pointarray, heatmap;
 var taxiData = [];
+var points = [];
+var markers = [];
   function getData() {
     search = location.search;
     search = location.search.substring(1, 100);
@@ -39,8 +41,8 @@ var taxiData = [];
         for (i=0; i<data.length; i++)
         {
           taxiData.push(new google.maps.LatLng(data[i].Lat, data[i].Long));
+          points.push(data[i]);
         }
-        debugger;
         initialize();
       });
   }
@@ -65,6 +67,18 @@ function initialize() {
   });
   heatmap.setMap(map);
   heatmap.set('radius', 50);
+
+  // add points
+  for (i=0; i<points.length; i++)
+  {
+    var m = new google.maps.Marker({
+        map:       map,
+        title:     points[i].Meta.Address + ": " + points[i].Description,
+        position:  new google.maps.LatLng(points[i].Lat,points[i].Long),
+    });
+    markers.push(m);
+  }
+  setAllMap(null); // hide by default
 }
 
 function toggleHeatmap() {
@@ -96,7 +110,25 @@ function changeRadius() {
 }
 
 function changeOpacity() {
-  heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+  heatmap.set('opacity', heatmap.get('opacity') ? null : 0.6);
+}
+
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+var tmarkers = false;
+function changeMarkers() {
+  if (tmarkers) {
+    setAllMap(null);
+    tmarkers=false;
+  } else {
+    setAllMap(map);
+    tmarkers=true;
+  }
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -106,6 +138,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   <body>
     <div id="panel">
+      <button onclick="changeMarkers()">Toggle Markers</button>
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
       <button onclick="changeGradient()">Change gradient</button>
       <button onclick="changeRadius()">Change radius</button>
