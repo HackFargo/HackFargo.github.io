@@ -61,7 +61,7 @@ body {
 
 
 // Menu
-ul {
+ul:not(.examples) {
   margin: 4em auto 0 auto;
   text-align: center;
   padding: 0;
@@ -296,3 +296,15 @@ ul {
   }
 }
 
+
+// Hackathon Registration 
+#hackathon-update {
+  background-color: darken(@content-background-color, 50%);
+  color: @content-background-color;
+  font-size: 1.4em;
+  text-align: center;
+  
+  width: 450px;
+  margin: 2em auto 1em auto;
+  padding: 1em;
+}

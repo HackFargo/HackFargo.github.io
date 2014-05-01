@@ -1,6 +1,6 @@
 $(function () {
    
-	$.getJSON('http://api.hackfargo.co/calls/type/party?state=3-7-2013&end=3-7-2014', function(parties) {
+	$.getJSON('http://api.hackfargo.co/calls/type/party?start=3-7-2013&end=3-7-2014', function(parties) {
 
 		var length = parties.length;
 		 for (var i = 1; i <= 6; i++) {

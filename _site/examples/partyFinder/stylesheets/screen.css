@@ -67,9 +67,20 @@ body {
 .heading {
   font-family: sans-serif;
   text-align: center;
-  margin: 50px;
+  margin: 50px 50px 0 50px;
   font-size: 40px;
   font-weight: bold; }
+
+.note {
+  color: #AAA;
+}
+
+.sub-heading {
+  font-family: sans-serif;
+  text-align: center;
+  color: #AAA;
+  margin: 5px;
+  font-size: 12px; }
 
 /* line 22, ../sass/screen.scss */
 .face {
@@ -84,14 +95,14 @@ body {
   height: 200px;
   width: 200px;
   background-color: rgba(255, 0, 0, 0.8);
-  color: #BBB;
+  color: #CCC;
   text-align: center;
   vertical-align: middle;
   /*@include opacity(.5);*/ }
 
 .face .partyType{
   margin: 40px 10px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
 }

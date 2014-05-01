@@ -57,12 +57,12 @@ body {
 #splash #mainlogo h2 {
   display: none;
 }
-ul {
+ul:not(.examples) {
   margin: 4em auto 0 auto;
   text-align: center;
   padding: 0;
 }
-ul li {
+ul:not(.examples) li {
   text-align: center;
   width: 120px;
   text-decoration: none;
@@ -74,7 +74,7 @@ ul li {
   margin: 0;
   color: #ff0000;
 }
-ul li a {
+ul:not(.examples) li a {
   padding: 5px;
   padding-top: 8px;
   color: #ff0000;
@@ -82,14 +82,14 @@ ul li a {
   text-decoration: none;
   display: inline-block;
 }
-ul li a:hover {
+ul:not(.examples) li a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #ff0000;
   color: #d4d4d4;
 }
-ul li a:active {
+ul:not(.examples) li a:active {
   color: #eeeeee;
 }
 #container {
@@ -240,4 +240,13 @@ ul li a:active {
   padding-top: 1.2em;
   font-size: 1.2em;
   font-weight: bold;
+}
+#hackathon-update {
+  background-color: #6e6e6e;
+  color: #eeeeee;
+  font-size: 1.4em;
+  text-align: center;
+  width: 450px;
+  margin: 2em auto 1em auto;
+  padding: 1em;
 }
