@@ -192,7 +192,7 @@ ul:not(.examples) li a:active {
   height: 200px;
   padding-top: 10em;
   font-family: "Bariol", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image: url("/assets/img/SmallHackFargoNeon.png");
+  background-image: url("/assets/img/HFLogo.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
